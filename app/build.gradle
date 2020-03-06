@@ -17,6 +17,9 @@ android {
     lintOptions {
         abortOnError false
     }
+    aaptOptions {
+        noCompress '.dat', '.dict'
+    }
     sourceSets {
         main {
             jni.srcDirs = []//设置禁止gradle生成Android.mk
